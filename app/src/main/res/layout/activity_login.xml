@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootlayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBlack"
+    tools:context=".view.activity.login.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/linearLayoutBottom"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp_sixteen"
+            android:layout_marginRight="@dimen/dp_sixteen"
+            android:gravity="center_horizontal|center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="@dimen/dp_one_fiftey_six"
+                android:layout_height="@dimen/dp_one_fiftey_six"
+                android:layout_centerInParent="true"
+                android:src="@drawable/dwealth_logo" />
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_sixteen"
+                android:backgroundTint="@color/colorLightGray"
+                android:drawableLeft="@drawable/ic_user"
+                android:drawablePadding="@dimen/dp_eight"
+                android:hint="@string/username"
+                android:id="@+id/textViewUserName"
+                android:inputType="text"
+                android:padding="@dimen/dp_sixteen"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/colorLightGray" />
+
+            <android.support.design.widget.TextInputEditText
+                android:layout_width="match_parent"
+                android:id="@+id/textViewPassword"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/colorLightGray"
+                android:drawableLeft="@drawable/ic_password"
+                android:drawablePadding="@dimen/dp_eight"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:padding="@dimen/dp_sixteen"
+                android:textColor="@android:color/white"
+                android:textColorHint="@color/colorLightGray" />
+
+            <Button
+                android:id="@+id/buttonLogin"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/dp_fortiy"
+                android:layout_marginTop="@dimen/dp_sixteen"
+                android:background="@drawable/login_btn_bg"
+                android:text="@string/login"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_eight"
+                android:inputType="text"
+                android:text="@string/forget_password"
+                android:textColor="@android:color/white" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_fiftey_six"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1.5dp"
+                    android:layout_marginLeft="@dimen/dp_sixteen"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightGray" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/or_login_via"
+                    android:textColor="@android:color/white" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1.5dp"
+                    android:layout_marginRight="@dimen/dp_sixteen"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightGray" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_eight"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutFbSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+<!--
+                    <com.facebook.login.widget.LoginButton
+                        android:id="@+id/login_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />
+-->
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_facebook" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_sixteen"
+                        android:text="@string/login_fb"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayoutGoogleSignIn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_eight"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_google" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp_sixteen"
+                        android:text="@string/login_google"
+                        android:textColor="@android:color/white" />
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayoutBottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_eight"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/don_t_have_an_account"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:id="@+id/textViewRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_two"
+            android:text="@string/register_now"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</RelativeLayout>

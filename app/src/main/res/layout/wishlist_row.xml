@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="@dimen/dp_eight"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:maxLines="1"
+            android:text="Nasdaq"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_eighteen"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/textViewRate"
+            android:id="@+id/textViewName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_eighteen"
+            android:textStyle="bold"
+            android:maxLines="1"
+            android:text="71.57"
+            android:layout_alignParentRight="true"
+            android:id="@+id/textViewRate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp_four"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:maxLines="1"
+            android:text="01/09"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/sp_eighteen"
+            android:id="@+id/textViewDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:textColor="@color/colorPrimary"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:layout_marginLeft="@dimen/dp_four"
+            android:layout_marginRight="@dimen/dp_four"
+            android:layout_toRightOf="@+id/textViewDate"
+            android:orientation="vertical"
+            android:id="@+id/linearLayoutDivider"
+            android:layout_width="1dp"
+            android:layout_centerVertical="true"
+            android:layout_height="@dimen/dp_sixteen"></LinearLayout>
+        <TextView
+            android:textColor="@color/colorPrimary"
+            android:maxLines="1"
+            android:text="NYSE"
+            android:textSize="@dimen/sp_eighteen"
+            android:layout_toRightOf="@+id/linearLayoutDivider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:textSize="@dimen/sp_eighteen"
+            android:maxLines="1"
+            android:textColor="@android:color/holo_green_dark"
+            android:text="+7.27 (+1.03%)"
+            android:layout_alignParentRight="true"
+            android:id="@+id/textViewPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>
+
+</LinearLayout>

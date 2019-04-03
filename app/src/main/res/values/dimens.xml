@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="dp_four">4dp</dimen>
+    <dimen name="dp_ten">10dp</dimen>
+    <dimen name="dp_twenty">20dp</dimen>
+    <dimen name="dp_hundered">100dp</dimen>
+    <dimen name="dp_twenty_four">24dp</dimen>
+
+
+    <dimen name="sp_eighteen">18sp</dimen>
+    <dimen name="sp_twenty_two">22sp</dimen>
+    <dimen name="dp_eight">8dp</dimen>
+    <dimen name="dp_sixteen">16dp</dimen>
+    <dimen name="dp_one">1dp</dimen>
+    <dimen name="dp_twenty_five">25dp</dimen>
+    <dimen name="dp_four_hundered">400dp</dimen>
+    <dimen name="sp_thirty_two">32sp</dimen>
+    <dimen name="dp_eighty">80dp</dimen>
+    <dimen name="dp_one_twenty">120dp</dimen>
+    <dimen name="dp_thirty_six">36dp</dimen>
+    <dimen name="dp_fiftey_six">56dp</dimen>
+    <dimen name="dp_fortiy_eight">48dp</dimen>
+    <dimen name="dp_fortiy">40dp</dimen>
+    <dimen name="sp_sixteen">16sp</dimen>
+    <dimen name="sp_twenty">20sp</dimen>
+    <dimen name="dp_two">2dp</dimen>
+    <dimen name="dp_twelve">12dp</dimen>
+    <dimen name="dp_seventy_two">72dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="dp_fortiy_two">42dp</dimen>
+    <dimen name="dp_one_fiftey_six">156dp</dimen>
+    <dimen name="sp_fourteen">14sp</dimen>
+
+</resources>

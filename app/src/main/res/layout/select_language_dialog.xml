@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rounded_white_bg"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_sixteen">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/select_lang"
+        android:textAllCaps="true"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="@dimen/dp_twenty_four"
+        android:textStyle="bold" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:layout_marginTop="@dimen/dp_eight">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:text="Select Language"
+
+            android:textSize="@dimen/sp_sixteen"
+            android:layout_alignParentLeft="true" />
+
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_eight"
+                android:background="@drawable/rounded_black_line_bg"
+                android:entries="@array/language_array"
+                android:layout_alignParentEnd="true"
+                android:textSize="@dimen/sp_twenty"
+                android:layout_alignParentRight="true" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/buttonSell"
+            android:layout_width="120dp"
+            android:layout_height="@dimen/dp_fortiy_two"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dp_sixteen"
+            android:background="@drawable/rounded_green_bg"
+            android:paddingLeft="@dimen/dp_eight"
+            android:paddingRight="@dimen/dp_eight"
+            android:text="@string/ok"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_eighteen"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonBuy"
+            android:layout_width="120dp"
+            android:layout_height="@dimen/dp_fortiy_two"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dp_sixteen"
+            android:background="@drawable/rounded_red_bg"
+            android:paddingLeft="@dimen/dp_eight"
+            android:paddingRight="@dimen/dp_eight"
+            android:text="@string/dismiss"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_eighteen"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/searchimg"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_search" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/searchimg"
+            android:hint="Search"
+            android:textColorHint="@color/lightGray" />
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Fund Price"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@+id/linearLayoutDays"
+        android:layout_marginTop="@dimen/dp_eight" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/buttonBuy"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_fortiy_two"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dp_sixteen"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_white_bg"
+            android:paddingLeft="@dimen/dp_eight"
+            android:paddingRight="@dimen/dp_eight"
+            android:text="@string/buy"
+            android:textColor="@color/colorGreen"
+            android:textSize="@dimen/sp_eighteen"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/buttonSell"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/dp_fortiy_two"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="@dimen/dp_sixteen"
+            android:layout_weight=".5"
+            android:background="@drawable/rounded_white_bg"
+            android:paddingLeft="@dimen/dp_eight"
+            android:paddingRight="@dimen/dp_eight"
+            android:text="@string/sell"
+            android:textColor="@color/colorRed"
+            android:textSize="@dimen/sp_eighteen"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:gravity="center"
+            android:src="@drawable/ic_search"
+            android:text="News"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/arrow_back"
+            android:src="@drawable/ic_back"
+            android:layout_toLeftOf="@+id/arrow_back" />
+
+        <ImageView
+            android:id="@+id/arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:rotation="180"
+            android:src="@drawable/ic_back"
+            android:layout_alignParentRight="true" />
+
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="8dp"
+        android:background="@color/white" />
+
+
+</LinearLayout>

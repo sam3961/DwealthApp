@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="match_parent"
+    android:id="@+id/rootlayout"
+    tools:context=".view.activity.profile.ProfileActivity">
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetEnd="0dp"
+            android:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttonAskQuestion"
+        android:layout_below="@+id/appBarLayout"
+
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp_sixteen"
+            android:layout_marginTop="@dimen/dp_sixteen"
+            android:layout_marginRight="@dimen/dp_sixteen"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/firstname"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_sixteen" />
+            <EditText
+                android:id="@+id/editTextFirstName"
+                android:padding="@dimen/dp_eight"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="@dimen/dp_four"
+                android:hint="Adam"
+                android:textColorHint="@color/colorLightGray"
+                android:background="@color/colorDividerLine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_fortiy" />
+
+            <TextView
+                android:layout_marginTop="@dimen/dp_sixteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/last_name"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_sixteen" />
+            <EditText
+                android:id="@+id/editTextLastName"
+                android:padding="@dimen/dp_eight"
+                android:textColor="@android:color/white"
+                android:inputType="text"
+                android:layout_marginTop="@dimen/dp_four"
+                android:hint="Louis"
+                android:textColorHint="@color/colorLightGray"
+                android:background="@color/colorDividerLine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_fortiy" />
+            <TextView
+                android:layout_marginTop="@dimen/dp_sixteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/birthday"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_sixteen" />
+            <EditText
+                android:id="@+id/editTextDob"
+                android:padding="@dimen/dp_eight"
+                android:textColor="@android:color/white"
+                android:inputType="text"
+                android:layout_marginTop="@dimen/dp_four"
+                android:hint="27-Jul-1994"
+                android:textColorHint="@color/colorLightGray"
+                android:background="@color/colorDividerLine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_fortiy" />
+            <TextView
+                android:layout_marginTop="@dimen/dp_sixteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/address"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_sixteen" />
+            <EditText
+                android:id="@+id/editTextAddress"
+                android:padding="@dimen/dp_eight"
+                android:textColor="@android:color/white"
+                android:inputType="text"
+                android:layout_marginTop="@dimen/dp_four"
+                android:hint="Plot No. 6 San Andreas"
+                android:textColorHint="@color/colorLightGray"
+                android:background="@color/colorDividerLine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_fortiy" />
+            <TextView
+                android:layout_marginTop="@dimen/dp_sixteen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/phoneNumber"
+
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_sixteen" />
+            <EditText
+                android:id="@+id/editTextPhoneNumber"
+                android:padding="@dimen/dp_eight"
+                android:textColor="@android:color/white"
+                android:layout_marginTop="@dimen/dp_four"
+                android:inputType="phone"
+                android:textColorHint="@color/colorLightGray"
+                android:hint="+1-5555-9999"
+                android:background="@color/colorDividerLine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_fortiy" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp_sixteen"
+                android:text="@string/password"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_sixteen" />
+
+            <EditText
+                android:id="@+id/editTextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_fortiy"
+                android:layout_marginTop="@dimen/dp_four"
+                android:background="@color/colorDividerLine"
+                android:inputType="textPassword"
+                android:textColorHint="@color/colorLightGray"
+                android:hint="******"
+                android:padding="@dimen/dp_eight"
+                android:textColor="@android:color/white" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dp_sixteen"
+                android:text="@string/payment_method"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/sp_sixteen" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_fortiy"
+                android:layout_marginTop="@dimen/dp_four"
+                android:background="@color/colorDividerLine"
+                android:hint="Pyapal"
+                android:visibility="gone"
+                android:layout_marginBottom="@dimen/dp_eight"
+                android:textColorHint="@color/colorLightGray"
+                android:padding="@dimen/dp_eight"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/buttonAskQuestion"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_fortiy_two"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp_sixteen"
+        android:background="@drawable/rounded_sky_blue_bg"
+        android:text="@string/update"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_eighteen" />
+</RelativeLayout>

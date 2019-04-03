@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_marginLeft="@dimen/dp_twelve"
+        android:layout_marginRight="@dimen/dp_twelve"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dp_four"
+        android:layout_marginBottom="@dimen/dp_four">
+
+        <View
+            android:id="@+id/viewLine"
+            android:layout_width="match_parent"
+            android:layout_height=".8dp"
+            android:layout_marginLeft="@dimen/dp_sixteen"
+            android:layout_marginRight="@dimen/sp_sixteen"
+            android:background="@color/colorLightGray" />
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/viewLine"
+            android:layout_marginTop="@dimen/dp_eight"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageViewIcon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/dp_four"
+                android:src="@drawable/ic_icon_settings" />
+
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp_eight"
+                android:layout_toRightOf="@+id/imageViewIcon"
+                android:gravity="center_vertical"
+                android:text="Dewealth"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

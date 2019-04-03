@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_eight">
+
+    <LinearLayout
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Alert"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_marginLeft="@dimen/dp_eight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10:00 AM"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold" />
+    </LinearLayout>
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:layout_marginTop="@dimen/dp_four"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="CAC 40"
+            android:textSize="@dimen/sp_eighteen"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="362.80"
+            android:layout_marginRight="@dimen/dp_eight"
+            android:layout_toLeftOf="@+id/textViewRate"
+            android:textSize="@dimen/sp_eighteen"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/textViewRate"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+3.83%"
+            android:padding="@dimen/dp_four"
+            android:background="@drawable/rounded_green_bg"
+            android:textSize="@dimen/sp_sixteen"
+            android:textColor="@android:color/white"
+            />
+    </RelativeLayout>
+
+</LinearLayout>

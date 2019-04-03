@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/rootlayout"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <TextView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/textViewCurrency"
+        android:layout_marginTop="@dimen/dp_eight"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp_sixteen"
+        android:textStyle="bold"
+        android:text="Currency = USD $"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <LinearLayout
+        android:id="@+id/linearLayoutDays"
+        android:layout_below="@+id/textViewCurrency"
+        android:layout_marginTop="@dimen/dp_twelve"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="1D"
+            android:background="@drawable/rounded_sky_blue_bg"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_sixteen"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:id="@+id/oneD"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="5D"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_sixteen"
+            android:id="@+id/fiveD"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="1M"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_sixteen"
+            android:layout_width="0dp"
+            android:id="@+id/oneM"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="1Y"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_sixteen"
+            android:layout_width="0dp"
+            android:id="@+id/oneY"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="5Y"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_sixteen"
+            android:layout_width="0dp"
+            android:id="@+id/fiveY"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="MAX"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp_sixteen"
+            android:layout_width="0dp"
+            android:id="@+id/max"
+            android:layout_weight="1"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart"
+        android:layout_below="@+id/linearLayoutDays"
+        android:layout_marginTop="@dimen/dp_eight"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <TextView
+        android:layout_margin="@dimen/dp_twelve"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        android:text="Portfolio"
+        android:textSize="@dimen/sp_sixteen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/piechart"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:nestedScrollingEnabled="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.RecyclerView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

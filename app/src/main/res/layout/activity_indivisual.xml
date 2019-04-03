@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".view.activity.individual.IndivisualActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentInsetStart="0dp"
+            android:contentInsetLeft="0dp"
+            android:contentInsetEnd="0dp"
+            android:contentInsetRight="0dp"
+            app:contentInsetEnd="0dp"
+            app:contentInsetLeft="0dp"
+            app:contentInsetRight="0dp"
+            app:contentInsetStart="0dp" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark">
+
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:hint="Search"
+            android:layout_weight=".8"
+            android:paddingStart="@dimen/dp_eight"
+            android:id="@+id/search"
+            android:inputType="text"
+            android:textColorHint="@color/lightGray" />
+
+
+        <ImageView
+            android:id="@+id/searchimg"
+            android:layout_weight=".2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_search" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Fund Price"
+        android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.github.mikephil.charting.charts.LineChart
+                android:id="@+id/chart"
+                android:layout_width="match_parent"
+                android:layout_height="242dp"
+                android:layout_below="@+id/linearLayoutDays"
+                android:layout_marginTop="@dimen/dp_eight" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonBuy"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_fortiy_two"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/dp_sixteen"
+                    android:layout_weight=".5"
+                    android:background="@drawable/rounded_white_bg"
+                    android:paddingLeft="@dimen/dp_eight"
+                    android:paddingRight="@dimen/dp_eight"
+                    android:text="@string/buy"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="@dimen/sp_eighteen"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/buttonSell"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/dp_fortiy_two"
+                    android:layout_centerHorizontal="true"
+                    android:layout_margin="@dimen/dp_sixteen"
+                    android:layout_weight=".5"
+                    android:background="@drawable/rounded_white_bg"
+                    android:paddingLeft="@dimen/dp_eight"
+                    android:paddingRight="@dimen/dp_eight"
+                    android:text="@string/sell"
+                    android:textColor="@color/colorRed"
+                    android:textSize="@dimen/sp_eighteen"
+                    android:textStyle="bold" />
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                android:background="@color/colorPrimaryDark">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:gravity="center"
+                    android:src="@drawable/ic_search"
+                    android:text="News"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toStartOf="@+id/arrow_back"
+                    android:layout_toLeftOf="@+id/arrow_back"
+                    android:src="@drawable/ic_back" />
+
+                <ImageView
+                    android:id="@+id/arrow_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:rotation="180"
+                    android:src="@drawable/ic_back" />
+
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:src="@drawable/news"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp_one_twenty"
+                android:layout_margin="8dp"
+                android:scaleType="fitXY"
+                android:background="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

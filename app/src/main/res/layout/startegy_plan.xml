@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/startegyPlan"
+    android:visibility="gone"
+    android:fillViewport="true"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_fortiy_two"
+            android:layout_margin="@dimen/dp_sixteen"
+            android:background="@drawable/rounded_sky_blue_bg"
+            android:text="@string/conservative"
+            android:id="@+id/conservative"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_eighteen" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_fortiy_two"
+            android:layout_margin="@dimen/dp_sixteen"
+            android:background="@drawable/rounded_sky_blue_bg"
+            android:text="@string/moderately"
+            android:id="@+id/moderately"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_eighteen" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_fortiy_two"
+            android:layout_margin="@dimen/dp_sixteen"
+            android:background="@drawable/rounded_sky_blue_bg"
+            android:text="@string/moderate"
+            android:textAllCaps="false"
+            android:id="@+id/moderate"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_eighteen" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_fortiy_two"
+            android:layout_margin="@dimen/dp_sixteen"
+            android:background="@drawable/rounded_sky_blue_bg"
+            android:text="@string/aggressive"
+            android:textAllCaps="false"
+            android:id="@+id/aggressive"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_eighteen" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_fortiy_two"
+            android:layout_margin="@dimen/dp_sixteen"
+            android:background="@drawable/rounded_sky_blue_bg"
+            android:text="@string/aggressive_allocation"
+            android:textAllCaps="false"
+            android:id="@+id/aggressive_allocation"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/sp_eighteen" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            android:layout_margin="@dimen/dp_sixteen"
+            android:src="@drawable/strategy" />
+    </LinearLayout>
+</ScrollView>
+
+
+
